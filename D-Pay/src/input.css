@@ -39,7 +39,7 @@
 }
 
 @theme {
-  --color-white: #fff;
+  --color-back: #F2F3F6;
   --color-purple: #3f3cbb;
   --color-midnight: #121063;
   --color-tahiti: #3ab7bf;
@@ -62,9 +62,9 @@
 
 }
 
-@utility container{
+/* @utility container{
   @apply
-}
+} */
 
 @layer utilities{
   .bg-home-moblie{
