@@ -75,13 +75,14 @@
   align-items: center;
   gap: 36px;
 }
-.menu-nav li a {
+.menu-nav > li > a {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
-.menu-nav li a::after {
+.menu-nav > li > a::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -90,16 +91,18 @@
   border-radius: 5px;
   top: 45px;
   margin: 0 auto;
+  transition: all 0.4s ease;
+  transition-delay: 0.5s;
   display: none;
-  /* right: 2%; */
 }
 
-/* .menu-nav > *:hover {
+/* .menu-nav > li:hover {
   font-weight: 600;
   color: #1d4ed8;
 } */
-.menu-nav li:hover::after{
-  display: block !important;
+
+.menu-nav li > a:hover::after {
+  display: block;
 }
 
 @layer components {
