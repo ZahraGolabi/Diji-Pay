@@ -8,7 +8,7 @@ window.addEventListener("scroll", () => {
     header.style.webkitBackdropFilter = "blur(20px)";
     header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.06)";
   } else {
-    header.style.top = "64px";
+    header.style.top = "100px";
     header.style.background = "transparent";
     header.style.backdropFilter = "none";
     header.style.webkitBackdropFilter = "none";

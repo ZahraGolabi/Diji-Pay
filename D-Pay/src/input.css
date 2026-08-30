@@ -71,3 +71,5 @@
     background-image: url("");
   }
 }
+
+@custom-variant child (& > *);

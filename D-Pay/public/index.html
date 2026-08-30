@@ -74,7 +74,14 @@
           d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
         />
       </symbol>
-
+      <symbol id="more" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+        />
+      </symbol>
       <symbol
         id="shopping-card"
         xmlns="http://www.w3.org/2000/svg"
@@ -105,9 +112,30 @@
           d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
         />
       </symbol>
+      <symbol id="search" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+        />
+      </symbol>
+      <symbol
+        id="Credit-card"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+      >
+        <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" />
+        <path stroke-linecap="round" d="M2 10h20" />
+
+        <circle cx="18" cy="15" r="2.5" stroke="currentColor" />
+        <path stroke-linecap="round" d="M18 13.5v1.5l0.8 0.8" />
+      </symbol>
     </svg>
 
-    <header class="w-[90%] mx-auto">
+    <header class="w-[90%] mx-auto relative top-9 left-0 right-0">
       <!-- logo and top menu  -->
       <div class="h-16 px-6 mx-auto leading-[64px] text-sm">
         <nav class="flex items-center justify-between">
@@ -119,12 +147,42 @@
             </a>
           </div>
           <div>
-            <ul class="flex items-center gap-x-9">
+            <ul class="flex items-center gap-x-9 relative">
               <li>
                 <a href="">وام و اعتبار</a>
+                <ul
+                  class="absolute top-15 right-3 z-10 py-2 pl-10 pr-5 flex items-center flex-col bg-white backdrop-blur-md shadow-lg border border-white/30 child:flex child:items-center text-onback-medium rounded-4xl child:gap-x-1 child:whitespace-nowrap child:text-gray-700 child:w-full child:h-12 child:hover:bg-blue-200 child:hover:text-blue-700 child:rounded-2xl child:p-3 "
+                >
+                  <li>
+                    <span>
+                      <svg class="w-6 h-6">
+                        <use href="#Credit-card"></use>
+                      </svg>
+                    </span>
+                    <a href=""> وام الان بخر بعدا پرداخت کن </a>
+                  </li>
+                  <li>
+                    <span></span>
+                    <a href="">وام خرید کالا</a>
+                  </li>
+                  <li>
+                    <span></span>
+                    <a href="">خرید اقساطی از دیجی کالا</a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="">بیمه</a>
+                <ul class="hidden absolute top-0  z-10 flex-col child:flex bg-red-400">
+                  <li>
+                    <span></span>
+                    <a href="#"> بیمه شخص ثالث </a>
+                  </li>
+                  <li>
+                    <span></span>
+                    <a href="#"> بیمه تجهیزات الکترونیک </a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="">مدیریت سرمایه</a>
@@ -150,58 +208,70 @@
       </div>
       <!-- login link  -->
       <!-- nav Menu  -->
-       <div class="fixed flex items-center justify-center inset-x-0  py-3  transition-all duration-500 header-scroll">
       <div
-        class="flex items-center justify-between rounded-full bg-white pl-4 pr-6 py-3 w-[90%]"
+        class="fixed flex items-center justify-center inset-x-0 py-3 transition-all duration-500 header-scroll"
       >
-        <div>
-          <nav>
-            <ul class="flex items-center gap-x-9">
-              <li>
-                <a href="">
-                  <svg class="w-6 h-6 text-blue-700">
-                    <use href="#home"></use>
-                  </svg>
-                  خانه
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg class="w-6 h-6">
-                    <use href="#home"></use>
-                  </svg>
-                  خدمات
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg class="w-6 h-6">
-                    <use href="#shopping-card"></use>
-                  </svg>
-                  فروشگاه
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <svg class="w-6 h-6">
-                    <use href="#card"></use>
-                  </svg>
-                  پرداخت
-                </a>
-              </li>
-            </ul>
-          </nav>
+        <div
+          class="flex items-center justify-between rounded-full bg-white pl-4 pr-6 py-3 w-[90%] text-base"
+        >
+          <div>
+            <nav>
+              <ul
+                class="flex items-center gap-x-9 child:flex child:items-center child:gap-x-2 text-zinc-600"
+              >
+                <li>
+                  <span>
+                    <svg class="w-6 h-6 text-blue-700">
+                      <use href="#home"></use>
+                    </svg>
+                  </span>
+                  <a href=""> خانه </a>
+                </li>
+                <li>
+                  <span>
+                    <svg class="w-6 h-6">
+                      <use href="#more"></use>
+                    </svg>
+                  </span>
+                  <a href=""> خدمات </a>
+                </li>
+                <li>
+                  <span>
+                    <svg class="w-6 h-6">
+                      <use href="#shopping-card"></use>
+                    </svg>
+                  </span>
+                  <a href=""> فروشگاه </a>
+                </li>
+                <li>
+                  <span>
+                    <svg class="w-6 h-6">
+                      <use href="#card"></use>
+                    </svg>
+                  </span>
+                  <a href=""> پرداخت </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- icon search (search box) -->
+          <div
+            class="flex items-center gap-x-2 bg-gray-200 w-[30%] p-5 text-sm rounded-full"
+          >
+            <span>
+              <svg class="w-6 h-6">
+                <use href="#search"></use>
+              </svg>
+            </span>
+            <input
+              class="text-onback-low w-full border-none outline-none focus:border-none focus:outline-none"
+              type=""
+              id=""
+              name=""
+              placeholder="جست و جو در خدمات ,فروشگاه ها محصولات"
+            />
+          </div>
         </div>
-        <div>
-          <span></span>
-          <input
-            type=""
-            id=""
-            name=""
-            placeholder="جست و جو در خدمکات ,فروشگاه ها محصولات"
-          />
-        </div>
-      </div>
       </div>
     </header>
 
