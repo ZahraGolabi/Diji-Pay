@@ -133,6 +133,99 @@
         <circle cx="18" cy="15" r="2.5" stroke="currentColor" />
         <path stroke-linecap="round" d="M18 13.5v1.5l0.8 0.8" />
       </symbol>
+      <symbol
+        id="card-recovery"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+      >
+        <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" />
+        <path stroke-linecap="round" d="M2 10h20" />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8 15L4 11m0 0l4-4M4 11h6a3 3 0 010 6"
+        />
+      </symbol>
+      <symbol
+        id="diji-calal"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 115 43"
+        fill="none"
+      >
+        <path
+          d="M113.914 10.4293L104.134 0.649422C103.199 -0.286172 101.639 -0.203333 100.835 0.849211C91.2797 13.3677 75.4331 21.5541 57.5008 21.559C39.5686 21.559 23.722 13.3677 14.1662 0.849211C13.3622 -0.203333 11.8029 -0.286172 10.8673 0.649422L1.0874 10.4293C-0.247774 11.7645 -0.37447 13.8988 0.824261 15.3509C14.2832 31.68 34.6567 42.0933 57.4667 42.1031H57.5008H57.5349C80.3449 42.0885 100.718 31.68 114.177 15.3461C115.376 13.8939 115.245 11.7547 113.914 10.4244"
+          fill="currentColor"
+        />
+      </symbol>
+      <symbol
+        id="car"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 15v-2a2 2 0 012-2h10a2 2 0 012 2v2"
+        />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M7 11l2-4h6l2 4"
+        />
+        <circle cx="7" cy="17" r="2.5" stroke="currentColor" />
+        <circle cx="17" cy="17" r="2.5" stroke="currentColor" />
+      </symbol>
+      <symbol
+        id="Electronic-device"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+      >
+        <rect x="2" y="5" width="14" height="8" rx="1" stroke="currentColor" />
+        <rect
+          x="3.5"
+          y="6.5"
+          width="11"
+          height="5"
+          rx="0.5"
+          stroke="currentColor"
+          opacity="0.1"
+        />
+        <rect
+          x="7"
+          y="13"
+          width="4"
+          height="2"
+          rx="0.5"
+          stroke="currentColor"
+        />
+        <path stroke-linecap="round" d="M5 15h8" />
+        <rect
+          x="15"
+          y="6.5"
+          width="4.5"
+          height="7"
+          rx="1.2"
+          stroke="currentColor"
+        />
+        <circle cx="17.25" cy="8" r="0.4" fill="currentColor" opacity="0.5" />
+        <rect
+          x="15.8"
+          y="8.8"
+          width="2.9"
+          height="3.2"
+          rx="0.4"
+          stroke="currentColor"
+          opacity="0.2"
+        />
+      </symbol>
     </svg>
 
     <header class="w-[90%] mx-auto relative top-9 left-0 right-0">
@@ -150,36 +243,50 @@
             <ul class="flex items-center gap-x-9 relative">
               <li>
                 <a href="">وام و اعتبار</a>
-                <ul
-                  class="absolute top-15 right-3 z-10 py-2 pl-10 pr-5 flex items-center flex-col bg-white backdrop-blur-md shadow-lg border border-white/30 child:flex child:items-center text-onback-medium rounded-4xl child:gap-x-1 child:whitespace-nowrap child:text-gray-700 child:w-full child:h-12 child:hover:bg-blue-200 child:hover:text-blue-700 child:rounded-2xl child:p-3 "
-                >
+                <ul class="dropdown-menu">
                   <li>
                     <span>
                       <svg class="w-6 h-6">
                         <use href="#Credit-card"></use>
                       </svg>
                     </span>
-                    <a href=""> وام الان بخر بعدا پرداخت کن </a>
-                  </li>
-                  <li>
-                    <span></span>
                     <a href="">وام خرید کالا</a>
                   </li>
                   <li>
-                    <span></span>
+                    <span>
+                      <svg class="w-6 h-6">
+                        <use href="#card-recovery"></use>
+                      </svg>
+                    </span>
+                    <a href=""> وام الان بخر بعدا پرداخت کن </a>
+                  </li>
+                  <li>
+                    <span>
+                      <svg class="w-6 h-6">
+                        <use href="#diji-calal"></use>
+                      </svg>
+                    </span>
                     <a href="">خرید اقساطی از دیجی کالا</a>
                   </li>
                 </ul>
               </li>
               <li>
                 <a href="">بیمه</a>
-                <ul class="hidden absolute top-0  z-10 flex-col child:flex bg-red-400">
+                <ul class="dropdown-menu">
                   <li>
-                    <span></span>
+                    <span>
+                      <svg class="w-6 h-6">
+                        <use href="#car"></use>
+                      </svg>
+                    </span>
                     <a href="#"> بیمه شخص ثالث </a>
                   </li>
                   <li>
-                    <span></span>
+                    <span>
+                      <svg class="w-6 h-6">
+                        <use href="#Electronic-device"></use>
+                      </svg>
+                    </span>
                     <a href="#"> بیمه تجهیزات الکترونیک </a>
                   </li>
                 </ul>
