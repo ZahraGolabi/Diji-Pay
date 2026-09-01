@@ -56,25 +56,69 @@
   --font-moraba-light: "Moraba Light", sans-serif;
   --font-moraba-bold: "Moraba Bold", sans-serif;
 
-  --breakpoint-xs: 30rem;
-  --breakpoint-custom: 62rem;
+  --breakpoint-xs: 375px;     
+  --breakpoint-sm: 640px;      
+  --breakpoint-md: 768px;      
+  --breakpoint-lg: 992px;      
+  --breakpoint-xl: 1024px;    
+  --breakpoint-2xl: 1280px;    
+   
+
 }
 
-/* @utility container{
-  @apply
-} */
+@utility container {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
 
-@layer utilities {
-  .bg-home-moblie {
-    background-image: url("");
+@variant xs {
+  .container {
+    max-width: 375px;
   }
 }
+
+@variant sm {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@variant md {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@variant lg {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@variant xl {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@variant 2xl {
+  .container {
+    max-width: 1180px;
+    padding-inline: 0.625rem;
+  }
+}
+
+
+
 
 @utility menu-nav {
   display: flex;
   align-items: center;
   gap: 36px;
 }
+
 .menu-nav > li > a {
   position: relative;
   display: flex;
