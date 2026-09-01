@@ -1,18 +1,22 @@
 const header = document.querySelector(".header-scroll");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 15) {
-    header.style.top = "0px";
+  if (window.scrollY > 50) {
+    header.style.position = "fixed";
+    header.style.top = "0";
     header.style.background = "rgba(242, 243, 246, 0.95)";
     header.style.backdropFilter = "blur(80px)";
-    header.style.webkitBackdropFilter = "blur(20px)";
     header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.06)";
+
+    header.style.webkitBackdropFilter = "blur(20px)";
   } else {
-    header.style.top = "100px";
-    header.style.background = "transparent";
+    header.style.position = "relative";
+    header.style.top = "auto";
+      header.style.background = "transparent";
     header.style.backdropFilter = "none";
     header.style.webkitBackdropFilter = "none";
     header.style.boxShadow = "none";
-    header.style.borderBottom = "none";
   }
 });
+
+

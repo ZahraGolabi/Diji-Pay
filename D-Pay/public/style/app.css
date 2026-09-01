@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-blue-700: oklch(48.8% 0.243 264.376);
@@ -183,23 +184,23 @@
   .relative {
     position: relative;
   }
-  .inset-x-0 {
-    inset-inline: 0px;
+  .sticky {
+    position: sticky;
+  }
+  .top-0 {
+    top: 0px;
   }
   .top-5 {
     top: calc(var(--spacing) * 5);
-  }
-  .top-8 {
-    top: calc(var(--spacing) * 8);
-  }
-  .top-9 {
-    top: calc(var(--spacing) * 9);
   }
   .right-0 {
     right: 0px;
   }
   .left-0 {
     left: 0px;
+  }
+  .z-50 {
+    z-index: 50;
   }
   .container {
     @media (width >= 375px) {
@@ -311,11 +312,8 @@
     --tw-border-style: none;
     border-style: none;
   }
-  .bg-amber-600 {
-    background-color: var(--color-amber-600);
-  }
-  .bg-amber-700 {
-    background-color: var(--color-amber-700);
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
   }
   .bg-back {
     background-color: var(--color-back);
@@ -323,32 +321,20 @@
   .bg-gray-200 {
     background-color: var(--color-gray-200);
   }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
-  .px-4 {
-    padding-inline: calc(var(--spacing) * 4);
-  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .px-6 {
-    padding-inline: calc(var(--spacing) * 6);
-  }
-  .px-8 {
-    padding-inline: calc(var(--spacing) * 8);
-  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .pt-40 {
+    padding-top: calc(var(--spacing) * 40);
   }
   .pr-6 {
     padding-right: calc(var(--spacing) * 6);
