@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dij-Pay</title>
     <link rel="stylesheet" href="../public/style/app.css" />
+    <link rel="stylesheet" href="../public/style/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
+
   <body class="bg-back font-dana h-[1400px]">
     <svg class="hidden">
       <symbol
@@ -314,83 +320,152 @@
             </div>
           </nav>
         </div>
-      </div>
-      <!-- login link  -->
-      <!-- nav Menu  -->
-      <div
-        class="sticky top-0 right-0 left-0 flex items-center justify-center py-3 transition-all duration-500 header-scroll w-full z-50"
-      >
+
+        <!-- login link  -->
+        <!-- nav Menu  -->
         <div
-          class="container flex items-center justify-between rounded-full bg-white pl-4 pr-6 py-3 text-base"
+          class="sticky top-0 right-0 left-0 flex items-center justify-center py-3 transition-all duration-500 header-scroll w-full z-50"
         >
-          <div>
-            <nav>
-              <ul
-                class="flex items-center gap-x-9 child:flex child:items-center child:gap-x-2 text-zinc-600 mr-2"
-              >
-                <li>
-                  <span>
-                    <svg class="w-6 h-6 text-blue-700">
-                      <use href="#home"></use>
-                    </svg>
-                  </span>
-                  <a href=""> خانه </a>
-                </li>
-                <li>
-                  <span>
-                    <svg class="w-6 h-6">
-                      <use href="#more"></use>
-                    </svg>
-                  </span>
-                  <a href=""> خدمات </a>
-                </li>
-                <li>
-                  <span>
-                    <svg class="w-6 h-6">
-                      <use href="#shopping-card"></use>
-                    </svg>
-                  </span>
-                  <a href=""> فروشگاه </a>
-                </li>
-                <li>
-                  <span>
-                    <svg class="w-6 h-6">
-                      <use href="#card"></use>
-                    </svg>
-                  </span>
-                  <a href=""> پرداخت </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <!-- icon search (search box) -->
           <div
-            class="flex items-center gap-x-2 bg-gray-200 w-[30%] p-4 text-sm rounded-full"
+            class="w-full flex items-center justify-between rounded-full bg-white pl-4 pr-6 py-3 text-base main-hedaer"
           >
-            <span>
-              <svg class="w-6 h-6">
-                <use href="#search"></use>
-              </svg>
-            </span>
-            <input
-              class="text-onback-low w-full border-none outline-none focus:border-none focus:outline-none"
-              type=""
-              id=""
-              name=""
-              placeholder="جست و جو در خدمات ,فروشگاه ها محصولات"
-            />
+            <div>
+              <nav>
+                <ul
+                  class="flex items-center gap-x-9 child:flex child:items-center child:gap-x-2 text-zinc-600 mr-2"
+                >
+                  <li>
+                    <span>
+                      <svg class="w-6 h-6 text-blue-700">
+                        <use href="#home"></use>
+                      </svg>
+                    </span>
+                    <a href=""> خانه </a>
+                  </li>
+                  <li>
+                    <span>
+                      <svg class="w-6 h-6">
+                        <use href="#more"></use>
+                      </svg>
+                    </span>
+                    <a href=""> خدمات </a>
+                  </li>
+                  <li>
+                    <span>
+                      <svg class="w-6 h-6">
+                        <use href="#shopping-card"></use>
+                      </svg>
+                    </span>
+                    <a href=""> فروشگاه </a>
+                  </li>
+                  <li>
+                    <span>
+                      <svg class="w-6 h-6">
+                        <use href="#card"></use>
+                      </svg>
+                    </span>
+                    <a href=""> پرداخت </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- icon search (search box) -->
+            <div
+              class="flex items-center gap-x-2 bg-gray-200 w-[30%] p-4 text-sm rounded-full"
+            >
+              <span>
+                <svg class="w-6 h-6">
+                  <use href="#search"></use>
+                </svg>
+              </span>
+              <input
+                class="text-onback-low w-full border-none outline-none focus:border-none focus:outline-none"
+                type=""
+                id=""
+                name=""
+                placeholder="جست و جو در خدمات ,فروشگاه ها محصولات"
+              />
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-<main class="pt-40">  <!-- کل main رو فاصله بده -->
-  <section>
-    <div class="container bg-amber-400" style="min-height: 200px; padding: 20px; border-radius: 12px;">
-      <div>kkkkjj</div>
-    </div>
-  </section>
-</main>
+    <main class="pt-10">
+      <!-- header section  -->
+      <section>
+        <div class="container bg-amber-400">
+          <div class="grid grid-cols-[70%_30%] gap-x-4">
+            <div>
+             <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="../public/img/1520edca0d94073ce639fd95e14d9bf7.webp"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../public/img/c101393b7b622430895587573a533b43.webp"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../public/img/3.webp"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                     <img
+                      src="../public/img/4.webp"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                     <img
+                      src="../public/img/5.webp"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../public/img/6.webp"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../public/img/7.webp"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../public/img/8.webp"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../public/img/9.webp"
+                      alt="slider"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination hero-pagination"></div>
+                <div class="swiper-button-next hero-next"></div>
+                <div class="swiper-button-prev hero-prev"></div>
+              </div>
+            </div>
+            <div class="bg-red-500 h-full">قسمت چپ</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
     <script src="/d-Pay/public/script/app.js"></script>
+    <script src="/d-Pay/public/script/swiper.js"></script>
   </body>
 </html>
