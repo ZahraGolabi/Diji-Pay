@@ -25,3 +25,14 @@ const heroSlider = new Swiper('.hero-slider', {
     },
   },
 });
+
+
+const miniSlider = new Swiper('.mini-slider', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+});
