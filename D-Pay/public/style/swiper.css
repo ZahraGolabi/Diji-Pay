@@ -6,7 +6,7 @@
   overflow: hidden;
   border-radius: 40px;
   position: relative;
-  height: 400px;
+  max-height: 400px;
 }
 .hero-slider__child {
   display: flex;
