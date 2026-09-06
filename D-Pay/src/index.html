@@ -574,7 +574,7 @@
             <!-- login link  -->
             <div>
               <a href="">
-                <div class="hidden xl:flex items-center">
+                <div class="hidden xl:flex items-center text-xs">
                   <svg class="w-[23px] h-[23px]">
                     <use href="#user"></use>
                   </svg>
@@ -742,13 +742,16 @@
       <!-- services digi pay  -->
       <section>
         <div class="container">
-          <div>
+          <div class="mt-8">
             <!-- part 1 services  -->
-            <div>
-              <div>خدمات دیجی پی</div>
+            <div class="flex items-center justify-between text-sm">
+              <div class="font-dana-demibold">خدمات دیجی پی</div>
               <div>
-                <a href="#">
-                  <svg class="h-[23px] w-[23px]">
+                <a
+                  href="#"
+                  class="flex items-center flex-row-reverse gap-1 text-blue-700"
+                >
+                  <svg class="h-[20px] w-[20px]">
                     <use href="#chevron-left"></use>
                   </svg>
                   همه
@@ -758,24 +761,29 @@
             <!-- part 2 services  -->
             <div class="grid grid-cols-4 gap-x-4 mt-5">
               <div
-                class="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                class="relative rounded-2xl overflow-hidden flex items-center justify-center group h-[260px]"
               >
-                <img
-                  src="../public/img/card2-digicard-navy.png"
-                  alt="Service 1"
-                />
+                <div class="w-full h-full transition-all duration-300">
+                  <img
+                    src="../public/img/loan-credit-cash-grouped.png"
+                    alt="Service 1"
+                    class="w-full h-auto block"
+                  />
+                </div>
                 <div
-                  class="absolute inset-0 flex flex-col items-center justify-end text-white group-hover:-translate-y-1/10 transition-all duration-300"
+                  class="absolute inset-0 flex flex-col items-center justify-end text-white group-hover:-translate-y-1/10 transition-all duration-300 p-4"
                 >
-                  <p class="text-lg font-bold leading-8 font-dana-demibold">
+                  <p
+                    class="text-lg font-bold leading-8 font-dana-demibold drop-shadow-md"
+                  >
                     خدمات وام و اعتبار
                   </p>
-                  <p class="text-xs leading-5">
+                  <p class="text-xs leading-5 text-center drop-shadow-md">
                     خرید قسطی بدون ضامن و سپرده گذاری
                   </p>
                   <a
                     href="#"
-                    class="flex items-center gap-x-2 mt-3 text-sm font-dana-medium backdrop-blur-md bg-gray-500 rounded-full py-2 px-4 transition-all duration-300 hover:bg-white/40 hover:scale-105 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0"
+                    class="flex items-center gap-x-2 mt-3 text-sm font-dana-medium bg-white/10 backdrop-blur-sm border border-white/10 text-white rounded-full py-2 px-4 transition-all duration-300 hover:bg-white/40 hover:scale-105 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0"
                   >
                     دریافت اعتبار
                     <svg class="h-[23px] w-[23px]">
@@ -784,26 +792,31 @@
                   </a>
                 </div>
               </div>
-              
+
               <div
-                class="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                class="relative rounded-2xl overflow-hidden flex items-center justify-center group h-[260px]"
               >
-                <div>
+                <div class="w-full h-full transition-all duration-300">
                   <img
                     src="../public/img/card2-digicard-navy.png"
                     alt="Service 1"
+                    class="w-full h-auto block"
                   />
                 </div>
                 <div
-                  class="absolute inset-0 flex flex-col items-center justify-end text-white group-hover:-translate-y-1/10 transition-all duration-300"
+                  class="absolute inset-0 flex flex-col items-center justify-end text-white group-hover:-translate-y-1/10 transition-all duration-300 p-4"
                 >
-                  <p class="text-lg font-bold leading-8 font-dana-demibold">
+                  <p
+                    class="text-lg font-bold leading-8 font-dana-demibold drop-shadow-md"
+                  >
                     خدمات دیجی کارت
                   </p>
-                  <p class="text-xs leading-5">راهکار هوشمند خرید</p>
+                  <p class="text-xs leading-5 text-center drop-shadow-md">
+                    راهکار هوشمند خرید
+                  </p>
                   <a
                     href="#"
-                    class="flex items-center gap-x-2 mt-3 text-sm font-dana-medium backdrop-blur-md bg-gray-500 rounded-full py-2 px-4 transition-all duration-300 hover:bg-white/40 hover:scale-105 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0"
+                    class="flex items-center gap-x-2 mt-3 text-sm font-dana-medium bg-white/10 backdrop-blur-sm border border-white/10 text-white rounded-full py-2 px-4 transition-all duration-300 hover:bg-white/40 hover:scale-105 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0"
                   >
                     دیجی کارت
                     <svg class="h-[23px] w-[23px]">
@@ -814,7 +827,7 @@
               </div>
 
               <div
-                class="relative rounded-2xl overflow-hidden flex items-center justify-center group"
+                class="relative rounded-2xl overflow-hidden flex items-center justify-center group h-[260px]"
               >
                 <div class="w-full h-full transition-all duration-300">
                   <img
@@ -823,11 +836,6 @@
                     class="w-full h-auto block"
                   />
                 </div>
-
-                <div
-                  class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-green-800/40"
-                ></div>
-
                 <div
                   class="absolute inset-0 flex flex-col items-center justify-end text-white group-hover:-translate-y-1/10 transition-all duration-300 p-4"
                 >
@@ -851,22 +859,18 @@
                   </a>
                 </div>
               </div>
-
+              
               <div
-                class="relative rounded-2xl overflow-hidden flex items-center justify-center group"
+                class="relative rounded-2xl overflow-hidden flex items-center justify-center group h-[260px]"
               >
                 <div
-                  class="w-full h-full transition-all duration-300 hover:bg-linear-to-t hover:from-blue-600 hover:via-blue-400 hover:to-transparent"
-                >
+                  class="w-full h-full transition-all duration-30">
                   <img
                     src="../public/img/card4-insurance-umbrella-blue.png"
                     alt="Service 1"
                     class="w-full h-auto block"
                   />
                 </div>
-                <div
-                  class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30"
-                ></div>
                 <div
                   class="absolute inset-0 flex flex-col items-center justify-end text-white group-hover:-translate-y-1/10 transition-all duration-300 p-4"
                 >
