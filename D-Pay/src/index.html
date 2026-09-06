@@ -506,6 +506,21 @@
           ></path>
         </g>
       </symbol>
+      <symbol
+        id="mark"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </symbol>
     </svg>
 
     <header class="mx-auto relative top-5 left-0 right-0">
@@ -600,8 +615,86 @@
                 </div>
               </a>
             </div>
-            <!-- menu mobile  -->
           </nav>
+          <!-- menu mobile  -->
+          <div
+            class="md:hidden fixed inset-0 py-[6px] px-[15px] z-40 bg-back w-full min-h-screen backdrop-blur-md transition-all duration-300 ease-in-out"
+          >
+            <div class="flex items-center justify-between mb-6">
+              <a href="">
+                <svg class="h-[30px] w-[78px]">
+                  <use href="#logo-digipay"></use>
+                </svg>
+              </a>
+              <svg class="h-[23px] w-[23px]">
+                <use href="#mark"></use>
+              </svg>
+            </div>
+            <!-- menu item  -->
+            <div class="">
+            <ul class="flex flex-col">
+                <li class="py-2">
+                  <a href="">وام و اعتبار</a>
+                  <ul class="menu-nav-mobile">
+                    <li>
+                      <span>
+                        <svg class="w-6 h-6">
+                          <use href="#Credit-card"></use>
+                        </svg>
+                      </span>
+                      <a href="">وام خرید کالا</a>
+                    </li>
+                    <li>
+                      <span>
+                        <svg class="w-6 h-6">
+                          <use href="#card-recovery"></use>
+                        </svg>
+                      </span>
+                      <a href=""> وام الان بخر بعدا پرداخت کن </a>
+                    </li>
+                    <li>
+                      <span>
+                        <svg class="w-6 h-6">
+                          <use href="#diji-calal"></use>
+                        </svg>
+                      </span>
+                      <a href="">خرید اقساطی از دیجی کالا</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="relative group">
+                  <a href="">بیمه</a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <span>
+                        <svg class="w-6 h-6">
+                          <use href="#car"></use>
+                        </svg>
+                      </span>
+                      <a href="#"> بیمه شخص ثالث </a>
+                    </li>
+                    <li>
+                      <span>
+                        <svg class="w-6 h-6">
+                          <use href="#Electronic-device"></use>
+                        </svg>
+                      </span>
+                      <a href="#"> بیمه تجهیزات الکترونیک </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">مدیریت سرمایه</a>
+                </li>
+                <li>
+                  <a href="">خدمات کسب و کار ها</a>
+                </li>
+                <li>
+                  <a href="">خدمات سازمانی </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <!-- login link  -->
 
