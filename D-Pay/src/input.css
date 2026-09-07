@@ -62,9 +62,6 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1024px;
   --breakpoint-2xl: 1280px;
-
-
-
 }
 
 @utility container {
@@ -119,8 +116,8 @@
   position: relative;
 }
 
-.menu-nav > li{
-font-size: 12px;
+.menu-nav > li {
+  font-size: 12px;
 }
 
 .menu-nav > li > a {
@@ -196,10 +193,10 @@ font-size: 12px;
 @utility menu-nav-mobile {
   display: flex;
   flex-direction: column;
-    color: #45474a;
-  /* gap: 8px;
-  padding: 16px; */
-  gap:15px
+  color: #45474a;
+  gap: 15px;
+      display: none;
+    visibility: hidden;
 }
 
 .menu-nav-mobile > li {
@@ -208,7 +205,6 @@ font-size: 12px;
   padding: 10px;
   gap: 5px;
   max-height: 30px;
-  /* border-radius: 12px; */
   transition: all 0.3s ease-in-out;
 
   cursor: pointer;
