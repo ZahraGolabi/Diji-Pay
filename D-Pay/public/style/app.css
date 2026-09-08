@@ -22,14 +22,9 @@
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-bold: 700;
-    --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
-    --radius-3xl: 1.5rem;
-    --radius-4xl: 2rem;
     --drop-shadow-md: 0 3px 3px rgb(0 0 0 / 0.12);
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --blur-sm: 8px;
-    --blur-md: 12px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -190,7 +185,6 @@
 }
 @layer utilities {
   .menu-nav-mobile {
-    display: flex;
     flex-direction: column;
     color: #45474a;
     gap: 15px;
@@ -233,9 +227,6 @@
   }
   .z-10 {
     z-index: 10;
-  }
-  .z-40 {
-    z-index: 40;
   }
   .container {
     @media (width >= 375px) {
@@ -322,9 +313,6 @@
   .max-h-\[260px\] {
     max-height: 260px;
   }
-  .min-h-screen {
-    min-height: 100vh;
-  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -407,9 +395,6 @@
   .overflow-hidden {
     overflow: hidden;
   }
-  .overflow-y-scroll {
-    overflow-y: scroll;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -457,17 +442,11 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .px-\[15px\] {
-    padding-inline: 15px;
-  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
-  }
-  .py-\[6px\] {
-    padding-block: 6px;
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -554,11 +533,6 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .backdrop-blur-md {
-    --tw-backdrop-blur: blur(var(--blur-md));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
   .backdrop-blur-sm {
     --tw-backdrop-blur: blur(var(--blur-sm));
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
@@ -594,10 +568,6 @@
   .duration-500 {
     --tw-duration: 500ms;
     transition-duration: 500ms;
-  }
-  .ease-in-out {
-    --tw-ease: var(--ease-in-out);
-    transition-timing-function: var(--ease-in-out);
   }
   .outline-none {
     --tw-outline-style: none;
@@ -640,16 +610,6 @@
   .focus\:outline-none:focus {
     --tw-outline-style: none;
     outline-style: none;
-  }
-  @media (width >= 768px) {
-    .md\:hidden {
-      display: none;
-    }
-  }
-  @media (width >= 992px) {
-    .lg\:grid {
-      display: grid;
-    }
   }
   @media (width >= 1024px) {
     .xl\:block {
@@ -835,6 +795,25 @@
 .group:hover .dropdown-menu {
   display: flex !important;
 }
+@layer components {
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    padding: 6px 15px;
+    z-index: 9999;
+    background-color: rgba(242, 243, 246, 0.8);
+    backdrop-filter: blur(12px);
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mobile-menu-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .menu-nav-mobile > li {
   display: flex;
   align-items: center;
@@ -843,6 +822,17 @@
   max-height: 30px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+.menu-arrow-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submenu-mobile-open {
+  display: flex;
+  visibility: visible;
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -990,10 +980,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-ease {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -1047,7 +1033,6 @@
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
-      --tw-ease: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;

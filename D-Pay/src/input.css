@@ -188,15 +188,42 @@
 .group:hover .dropdown-menu {
   display: flex !important;
 }
+/* mobile-menu */
+
+@layer components {
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    padding: 6px 15px;
+    /* padding-top: 64px; */
+    z-index: 9999;
+    background-color: rgba(242, 243, 246, 0.8);
+    backdrop-filter: blur(12px);
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+      opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* .mobile-menu-hidden {
+    opacity: 0;
+    visibility: hidden;
+  } */
+  
+  .mobile-menu-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 
 /* menu-nav-mobile  */
 @utility menu-nav-mobile {
-  display: flex;
   flex-direction: column;
   color: #45474a;
   gap: 15px;
-      display: none;
-    visibility: hidden;
+  display: none;
+  visibility: hidden;
 }
 
 .menu-nav-mobile > li {
@@ -206,6 +233,16 @@
   gap: 5px;
   max-height: 30px;
   transition: all 0.3s ease-in-out;
-
   cursor: pointer;
+}
+.menu-arrow-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submenu-mobile-open {
+  display: flex;
+  visibility: visible;
 }

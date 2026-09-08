@@ -655,7 +655,7 @@
                   </svg>
                   <span>ورود/ ثبت نام</span>
                 </div>
-                <div class="block xl:hidden">
+                <div class="block xl:hidden show-mobile-menu">
                   <svg class="w-[30px] h-[30px]">
                     <use href="#bars"></use>
                   </svg>
@@ -665,20 +665,22 @@
           </nav>
           <!-- menu mobile  -->
           <div
-            class="md:hidden fixed inset-0 py-[6px] px-[15px] z-40 bg-back w-full min-h-screen backdrop-blur-md transition-all duration-300 ease-in-out overflow-y-scroll"
+            class="mobile-menu"
           >
             <div class="flex items-center justify-between mb-6">
-              <a href="">
+              <a href="#">
                 <svg class="h-[30px] w-[78px]">
                   <use href="#logo-digipay"></use>
                 </svg>
               </a>
+              <span class="close-menu">
               <svg class="h-[23px] w-[23px]">
                 <use href="#mark"></use>
               </svg>
+              </span>
             </div>
             <!-- menu item mobile -->
-            <div class="">
+            <div>
               <ul
                 class="flex flex-col child:py-2 child:border-b child:border-gray-300 child:last:border-b-0 child:min-h-[60px]"
               >
@@ -688,9 +690,11 @@
                     class="flex items-center justify-between hover:text-blue-700 transition-colors duration-20 h-11 py-3"
                   >
                     وام و اعتبار
-                    <svg class="h-[20px] w-[20px]">
-                      <use href="#chevron-down"></use>
-                    </svg>
+                    <span class="menu-arrow-icon">
+                      <svg class="h-[20px] w-[20px]">
+                        <use href="#chevron-down"></use>
+                      </svg>
+                    </span>
                   </a>
                   <ul class="menu-nav-mobile">
                     <li>
@@ -721,12 +725,14 @@
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="#"
                     class="flex items-center justify-between hover:text-blue-700 transition-colors duration-20 h-11 py-3"
                     >بیمه
-                    <svg class="h-[20px] w-[20px]">
-                      <use href="#chevron-down"></use>
-                    </svg>
+                      <span class="menu-arrow-icon">
+                      <svg class="h-[20px] w-[20px]">
+                        <use href="#chevron-down"></use>
+                      </svg>
+                    </span>
                   </a>
                   <ul class="menu-nav-mobile">
                     <li>
@@ -761,9 +767,11 @@
                     class="flex items-center justify-between hover:text-blue-700 transition-colors duration-20 h-11 py-3"
                   >
                     خدمات کسب و کار ها
-                    <svg class="h-[20px] w-[20px]">
-                      <use href="#chevron-down"></use>
-                    </svg>
+                        <span class="menu-arrow-icon">
+                      <svg class="h-[20px] w-[20px]">
+                        <use href="#chevron-down"></use>
+                      </svg>
+                    </span>
                   </a>
                   <ul class="menu-nav-mobile">
                     <li>

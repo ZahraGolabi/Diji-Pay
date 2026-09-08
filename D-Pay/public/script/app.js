@@ -20,3 +20,36 @@ window.addEventListener("scroll", () => {
     header.style.boxShadow = "none";
   }
 });
+
+
+// sub menu 
+
+
+
+const menuSpans = document.querySelectorAll(".menu-arrow-icon")
+const closeMenu = document.querySelector(".close-menu")
+const mobileMenu = document.querySelector(".mobile-menu")
+const showMobileMenu = document.querySelector(".show-mobile-menu")
+
+const toggleSubMenu = (e) => {
+const li = e.currentTarget.closest('li');
+const menuContainer = li.querySelector('.menu-nav-mobile');
+menuContainer.classList.toggle('submenu-mobile-open');
+  
+}
+
+menuSpans.forEach((menu) => {
+  menu.addEventListener("click", toggleSubMenu)
+})
+
+const showMenuHandler=()=>{
+mobileMenu.classList.add("mobile-menu-visible")
+}
+
+const hideMenuHandler=()=>{
+mobileMenu.classList.toggle("mobile-menu-hidden")
+}
+
+showMobileMenu.addEventListener("click",showMenuHandler)
+closeMenu.addEventListener("click",hideMenuHandler)
+
