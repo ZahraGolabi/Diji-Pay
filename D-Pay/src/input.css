@@ -195,22 +195,16 @@
     position: fixed;
     inset: 0;
     padding: 6px 15px;
-    /* padding-top: 64px; */
     z-index: 9999;
-    background-color: rgba(242, 243, 246, 0.8);
+    background-color:#f2f3f6;
     backdrop-filter: blur(12px);
     width: 100%;
     min-height: 100vh;
     overflow-y: auto;
-      opacity: 0;
-    visibility: hidden;
-  }
-  
-  /* .mobile-menu-hidden {
     opacity: 0;
     visibility: hidden;
-  } */
-  
+  }
+
   .mobile-menu-visible {
     opacity: 1;
     visibility: visible;

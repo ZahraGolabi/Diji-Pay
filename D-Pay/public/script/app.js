@@ -42,14 +42,11 @@ menuSpans.forEach((menu) => {
   menu.addEventListener("click", toggleSubMenu)
 })
 
-const showMenuHandler=()=>{
-mobileMenu.classList.add("mobile-menu-visible")
+const MenuHandler=()=>{
+mobileMenu.classList.toggle("mobile-menu-visible")
 }
 
-const hideMenuHandler=()=>{
-mobileMenu.classList.toggle("mobile-menu-hidden")
-}
 
-showMobileMenu.addEventListener("click",showMenuHandler)
-closeMenu.addEventListener("click",hideMenuHandler)
+showMobileMenu.addEventListener("click",MenuHandler)
+closeMenu.addEventListener("click",MenuHandler)
 

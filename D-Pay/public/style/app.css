@@ -15,6 +15,11 @@
     --color-zinc-500: oklch(55.2% 0.016 285.938);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1024px;
+    --breakpoint-2xl: 1280px;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -30,9 +35,18 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-back: #f2f3f6;
+    --color-purple: #3f3cbb;
+    --color-midnight: #121063;
+    --color-tahiti: #3ab7bf;
+    --color-bermuda: #78dcca;
+    --shadow-normal: 0 1px 10px rgba(0, 0, 0, 0.05);
     --font-dana: "Dana", sans-serif;
     --font-dana-medium: "Dana Medium", sans-serif;
     --font-dana-demibold: "Dana DemiBold", sans-serif;
+    --font-moraba: "Moraba", sans-serif;
+    --font-moraba-light: "Moraba Light", sans-serif;
+    --font-moraba-bold: "Moraba Bold", sans-serif;
+    --breakpoint-xs: 375px;
   }
 }
 @layer base {
