@@ -594,6 +594,50 @@
           />
         </g>
       </symbol>
+      <symbol
+        id="shop"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="none"
+          stroke="#000000"
+          stroke-width="42"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="
+          M 96 192
+          L 96 400
+          C 96 428 112 444 140 444
+          L 372 444
+          C 400 444 416 428 416 400
+          L 416 192
+
+          M 64 192
+          L 84 76
+          C 88 60 100 52 116 52
+          L 396 52
+          C 412 52 424 60 428 76
+          L 448 192
+          Z
+
+          M 180 192
+          L 180 96
+
+          M 256 192
+          L 256 96
+
+          M 332 192
+          L 332 96
+
+          M 202 444
+          L 202 330
+          C 202 296 226 272 256 272
+          C 286 272 310 296 310 330
+          L 310 444
+        "
+        />
+      </symbol>
     </svg>
 
     <header class="mx-auto relative top-5 left-0 right-0">
@@ -905,9 +949,9 @@
     </header>
 
     <main class="pt-10">
-      <div class="container">
-        <!-- header section  -->
-        <section>
+      <!-- header section  -->
+      <section>
+        <div class="container">
           <div
             class="grid grid-cols-1 xl:grid-cols-[70%_30%] gap-x-4 xl:min-h-[400px]"
           >
@@ -981,9 +1025,11 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- services digi pay  -->
-        <section>
+        </div>
+      </section>
+      <!-- services digi pay  -->
+      <section>
+        <div class="container">
           <div class="mt-8 flex flex-col gap-5">
             <!-- part 1 services  -->
             <div class="flex items-center justify-between text-sm">
@@ -1193,32 +1239,79 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- cover box  -->
-        <section>
-          <div class="mt-8 ">
-            <img src='../public/img/12.webp' alt='' loading="lazy" class="h-full mx-auto object-cover">
+        </div>
+      </section>
+      <!-- cover box  -->
+      <section>
+        <div class="container">
+          <div class="mt-8">
+            <img
+              src="../public/img/12.webp"
+              alt=""
+              loading="lazy"
+              class="h-full mx-auto object-cover"
+            />
           </div>
-        </section>
-       <!-- sections Amazing Payment -->
-        <section>
-          <div class="m-7 p-5 purple-gradient-box text-white rounded-2xl mb-5 pl-5 ">
+        </div>
+      </section>
+      <!-- sections Amazing Payment -->
+      <section>
+        <div class="xl:container">
+          <div
+            class="mt-7 xl:m-7 p-5 purple-gradient-box text-white rounded-2xl mb-5 pl-5"
+          >
             <div class="flex items-center justify-between bg">
+              <div>قسطی شگفت</div>
+              <div class="flex items-center justify-center gap-x-1 timer">
+                <div>03</div>
+                <span>:</span>
+                <div>48</div>
+                <span>:</span>
+                <div>10</div>
+              </div>
+            </div>
             <div>
-              قسطی شگفت
-            </div>
-            <div class="flex items-center justify-center gap-x-1 timer">
-              <div>03</div>
-              <span>:</span>
-              <div>48</div>
-              <span>:</span>
-              <div>10</div>
-            </div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide  w-[155px] h-[286px]">
+                    <a href="#">
+                      <article class="p-[4px] rounded-xl shadow-md  bg-white text-zinc-900">
+                        <div class="w-[147px] h-[147px]">
+                          <img
+                            src="../public/img/pr-1.webp"
+                            alt="..."
+                            class="object-cover duration-300 w-full h-full block"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div  class="flex items-center gap-1.5 text-xs text-black">
+                          <span>
+                          <svg class="w-5 h-5">
+                          <use href="#shop"></use>
+                          </svg>
+                          </span>
+                          <span>بانی مد</span>
+                        </div>
+                        <div>
+                        <h3> پیراهن آستین کوتاه مردانه فريولي مدل 11121</h3>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-
-      </div>
+        </div>
+      </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
     <script src="/d-Pay/public/script/app.js"></script>
