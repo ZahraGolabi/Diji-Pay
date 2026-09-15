@@ -102,6 +102,10 @@
   background: linear-gradient(220deg, #0e0c7c 3.65%, #89a7ec 95.95%);
 }
 
+@utility purple-blue-gradient {
+  background: linear-gradient(238deg, var(--Alias-Line-Credit, #925dfd) 0.54%);
+}
+
 @utility child-flex-center {
   > * {
     display: flex;

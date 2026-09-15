@@ -59,3 +59,8 @@
   object-fit: cover;
   object-position: center;
 }
+
+.product-slider{
+  width: 155px !important;
+  background-color: transparent !important;
+}
