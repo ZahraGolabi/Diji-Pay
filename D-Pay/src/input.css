@@ -45,6 +45,9 @@
   --color-red-low: #f9441f;
   --color-onback-low: #9ca3af;
   --shadow-normal: 0 1px 10px rgba(0, 0, 0, 0.05);
+  --color-coral: #FE5722;
+  --color-sec-bg: #e5e7eb;
+  --color-sec-text: #374151;
 
   --font-dana: "Dana", sans-serif;
   --font-dana-medium: "Dana Medium", sans-serif;

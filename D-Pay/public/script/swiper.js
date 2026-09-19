@@ -1,4 +1,4 @@
-const heroSlider = new Swiper('.hero-slider', {
+const heroSlider = new Swiper(".hero-slider", {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
@@ -7,7 +7,7 @@ const heroSlider = new Swiper('.hero-slider', {
     disableOnInteraction: false,
   },
   pagination: {
-    el: '.hero-pagination',
+    el: ".hero-pagination",
     clickable: true,
   },
   breakpoints: {
@@ -26,8 +26,7 @@ const heroSlider = new Swiper('.hero-slider', {
   },
 });
 
-
-const miniSlider = new Swiper('.mini-slider', {
+const miniSlider = new Swiper(".mini-slider", {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
@@ -37,12 +36,21 @@ const miniSlider = new Swiper('.mini-slider', {
   },
 });
 
- var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        freeMode: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+// discount products 
+var swiper = new Swiper(".product-slider-discoun", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

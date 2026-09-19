@@ -28,7 +28,7 @@
   bottom: 10px;
   left: 0;
   right: 0;
-} 
+}
 .hero-pagination .swiper-pagination-bullet {
   background: rgba(0, 0, 0, 0.6);
 }
@@ -60,7 +60,29 @@
   object-position: center;
 }
 
-.product-slider{
+.product-slider {
   width: 155px !important;
   background-color: transparent !important;
+  padding-bottom: 0.5rem;
+}
+
+/* discount products  */
+
+.product-slider-discoun .swiper-slide.product-discoun-item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top:20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f3f6 100%);
+}
+
+.product-slider-discoun .product-discoun-item img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain; /* اگر نمی‌خواهی کراپ شود */
 }
